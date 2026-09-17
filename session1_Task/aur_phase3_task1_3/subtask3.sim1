@@ -1,0 +1,29 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega32-1" mainComp="false" Show_id="true" Show_Val="false" Pos="116,-108" rotation="0" hflip="1" vflip="1" label="mega32-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="8 MHz" Program="../../Users/ahmed/OneDrive/Documents/PlatformIO/Projects/aur_phase3_task1_3/.pio/build/ATmega32/firmware.hex" Auto_Load="true" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="4,-100" rotation="0" hflip="-1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="64,-100" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-32,-76" rotation="0" hflip="1" vflip="1" label="Ground-4" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-5" mainComp="false" Show_id="false" Show_Val="false" Pos="48,-36" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-5" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Push" CircId="Push-6" mainComp="false" Show_id="false" Show_Val="false" Pos="44,20" rotation="0" hflip="1" vflip="1" label="Push-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="0,48" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Resistor-3-rPin" endpinid="mega32-1-PORTB0" pointList="80,-100,108,-100" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Led-2-lPin" endpinid="Resistor-3-lPin" pointList="20,-100,48,-100" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Led-2-rPin" endpinid="Ground-4-Gnd" pointList="-12,-100,-32,-100,-32,-92" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Fixed Voltage-5-outnod" endpinid="mega32-1-RST" pointList="64,-36,108,-36" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Push-6-switch0pinN" endpinid="mega32-1-PORTD2" pointList="60,20,108,20" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Ground-7-Gnd" endpinid="Push-6-pinP0" pointList="0,32,0,20,28,20" />
+
+</circuit>
